@@ -163,4 +163,25 @@ console.log(martin.walk())
 //display the properties of the user objects
 //call the different methods of the user objects
 
+//answers
+//no.2
+let Bob = {
+    email: "bob@gmail.com",
+    username: "bob1",
+    gender: "male",
+    login: function(){
+        return this.username + " Has logged in!";
+    },
+    logout: function(){
+        return this.username + " Has logged out!";
+    }
+}
+console.log(Bob.login());
+console.log(Bob.logout());
+
+let Alice = {
+    
+}
+
+
 
