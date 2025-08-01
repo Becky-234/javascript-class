@@ -11,7 +11,7 @@ let x = 10
  let y = 2*x + 5 
 console.log(y);
 
-//coment
+//comments
 /*multiple comments */
 
 //no.1

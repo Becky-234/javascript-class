@@ -33,7 +33,7 @@ console.log(typeof(productname))
 let productcost = 3500
  //we need to rewrite when changing the value e.g (let productcost = 4000) meaning it is immutable
 let transportisneeded = true
-let tablecolor
+let tablecolor = null
 let discount = null
 console.log(productcost * 2)
 

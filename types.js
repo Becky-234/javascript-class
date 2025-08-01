@@ -1,7 +1,7 @@
 
 
 //no.5
-typeof "instagram"//srting
-typeof "welcomeback"//boolean
-typeof "user"//undefined
-typeof "name"//null
+console.log(typeof("instagram")) //srting
+console.log(typeof(welcomeback))//boolean
+console.log(typeof(user))//undefined
+console.log(typeof(name))//null
