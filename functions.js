@@ -83,10 +83,10 @@
 //     console.log('thank you for using our system')
 // }]
 
-actions[0]();
-actions[1]();
-actions[2]();
-console.log(actions)
+// actions[0]();
+// actions[1]();
+// actions[2]();
+// console.log(actions)
 
 let unitPrice
 let quantity
