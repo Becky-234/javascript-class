@@ -88,41 +88,41 @@
 // actions[2]();
 // console.log(actions)
 
-let unitPrice
-let quantity
-let address
-let productName
-let transportFee
-let vatFee
-let paymentMethod
-let calculateSubTotal
-let calculateUnitPrice
+// let unitPrice
+// let quantity
+// let address
+// let productName
+// let transportFee
+// let vatFee
+// let paymentMethod
+// let calculateSubTotal
+// let calculateUnitPrice
 
 
-let order = {
-    unitPrice: 500000,
-    quantity: 3,
-    calculateSubTotal: function(){
-        return this.unitPrice * this.quantity
-    }
-}
-order.unitPrice
-order.quantity
-order.calculateSubTotal()
+// let order = {
+//     unitPrice: 500000,
+//     quantity: 3,
+//     calculateSubTotal: function(){
+//         return this.unitPrice * this.quantity
+//     }
+// }
+// order.unitPrice
+// order.quantity
+// order.calculateSubTotal()
 
-let car = {
-    name: "rangerover",
-    weight: 1000,
-    start: function(){
-        return 'vroom'
-    }
-}
+// let car = {
+//     name: "rangerover",
+//     weight: 1000,
+//     start: function(){
+//         return 'vroom'
+//     }
+// }
 
-car.name
-car.weight
-car.start()
+// car.name
+// car.weight
+// car.start()
 
-console.log(car.name + car.weight)
+// console.log(car.name + car.weight)
 
 let firstName = "Maranatha"
 
@@ -180,8 +180,55 @@ console.log(Bob.login());
 console.log(Bob.logout());
 
 let Alice = {
-    
+    email: "alice@gmail.com",
+    username: "alice1",
+    gender: "female",
+    login: function(){
+        return this.username + " Has logged in!";
+    },
+    logout: function(){
+        return this.username + " Has logged out"
+    }    
+    }
+console.log(Alice.login());
+console.log(Alice.logout());
+
+//no.1
+let sumsang = {
+    color: "black",
+    size: "large",
+    type: "s24",
+    takePicture: function(){
+        return this.type + "  1 + 2 + 3 + snap"
+    },
+    playMusic: function(){
+        return this.type + " play + pause"
+    },
+    ring: function(){
+        return this.type + " vibrate + sound"
+    }
 }
+console.log(sumsang.takePicture());
+console.log(sumsang.playMusic());
+console.log(sumsang.ring());
+
+let iphone = {
+     color: "white",
+    size: "large",
+    type: "16promax",
+    takePicture: function(){
+        return this.type + "  1 + 2 + snap"
+    },
+    playMusic: function(){
+        return this.type + " play + pause"
+    },
+    ring: function(){
+        return this.type + " sound"
+    }
+}
+console.log(iphone.takePicture());
+console.log(iphone.playMusic());
+console.log(iphone.ring());
 
 
 
