@@ -200,42 +200,77 @@ let Alice = {
 console.log(Alice.login());
 console.log(Alice.logout());
 
-//no.1
-let sumsang = {
-    color: "black",
-    size: "large",
-    type: "s24",
-    takePicture: function(){
-        return this.type + "  1 + 2 + 3 + snap"
-    },
-    playMusic: function(){
-        return this.type + " play + pause"
-    },
-    ring: function(){
-        return this.type + " vibrate + sound"
-    }
-}
-console.log(sumsang.takePicture());
-console.log(sumsang.playMusic());
-console.log(sumsang.ring());
+// //no.1
+// let phoneOne = {
+//     color: "black",
+//     size: "large",
+//     type: "s24",
+//     takePicture: function(){
+//         return this.type + "  1 + 2 + 3 + snap"
+//     },
+//     playMusic: function(){
+//         return ` playing music`
+//     },
+//     ring: function(){
+//         return `${this.type} ringing`
+//     }
+// }
+// console.log(sumsang.takePicture());
+// console.log(sumsang.playMusic());
+// console.log(sumsang.ring());
 
-let iphone = {
-     color: "white",
-    size: "large",
-    type: "16promax",
-    takePicture: function(){
-        return this.type + "  1 + 2 + snap"
-    },
-    playMusic: function(){
-        return this.type + " play + pause"
-    },
-    ring: function(){
-        return this.type + " sound"
+// let phoneTwo = {
+//      color: "white",
+//     size: "large",
+//     type: "16promax",
+//     takePicture: function(){
+//         return this.type + "  1 + 2 + snap"
+//     },
+//     playMusic: function(){
+//         return this.type + " play + pause"
+//     },
+//     ring: function(){
+//         return this.type + " sound"
+//     }
+// }
+// console.log(iphone.takePicture());
+// console.log(iphone.playMusic());
+// console.log(iphone.ring());
+
+
+function createPhone(color, size, type){
+    return{
+        color: color,
+        size: size,
+        type: type,
+    
+        takePicture: function(){
+            return this.type + "  1 + 2 + snap"
+        },
+        playMusic: function(){
+            return this.type + " play + pause"
+        },
+        ring: function(){
+            return this.type + " sound"
+        }
     }
 }
-console.log(iphone.takePicture());
-console.log(iphone.playMusic());
-console.log(iphone.ring());
+let phoneOne = createPhone("black", "large", "s24");
+let phoneTwo = createPhone("white", "large", "16promax");
+
+console.log("phoneOne:", phoneOne);
+console.log(phoneOne.takePicture());
+console.log(phoneOne.playMusic());
+console.log(phoneOne.ring());
+
+//no.1 Create a function to create a user object 
+//no.2 Create three users using the function
+//no.3 Logout the properties of each user object
+//no.4 Call the methods of each user object
+
+
+
+
 
 
 
