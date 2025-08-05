@@ -124,29 +124,36 @@
 
 // console.log(car.name + car.weight)
 
-let firstName = "Maranatha"
+// let firstName = "Maranatha"
 
-let ben ={
-    weight: 49,
-    age: 20,
-    firstName: "Benjamin",
-    walk: function(){
-        return this.firstName + ' is walking'
-    }
-}
-console.log(ben.walk())
-console.log(this)
+// let ben ={
+//     weight: 49,
+//     age: 20,
+//     firstName: "Benjamin",
+//     walk: function(){
+//         return this.firstName + ' is walking'
+//     }
+// }
+// console.log(ben.walk())
+// console.log(this)
+
 //why is it not good to use arrow functions in object method definations?
-
-let martin ={
-    weight: 49,
-    age: 20,
-    firstName: "Martin",
-    walk: function(){
-        return this.firstName + ' is walking'
+const userthree = {
+    name: "Becky",
+    greet: ()=>{
+        console.log(`Hello, my name is ${this.name}`)
     }
-}
-console.log(martin.walk())
+};
+
+// let martin ={
+//     weight: 49,
+//     age: 20,
+//     firstName: "Martin",
+//     walk: function(){
+//         return this.firstName + ' is walking'
+//     }
+// }
+// console.log(martin.walk())
 
 //no.1 model a phone object 
 //with properties;color,size,type
