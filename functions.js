@@ -172,33 +172,33 @@ const userthree = {
 
 //answers
 //no.2
-let Bob = {
-    email: "bob@gmail.com",
-    username: "bob1",
-    gender: "male",
-    login: function(){
-        return this.username + " Has logged in!";
-    },
-    logout: function(){
-        return this.username + " Has logged out!";
-    }
-}
-console.log(Bob.login());
-console.log(Bob.logout());
+// let Bob = {
+//     email: "bob@gmail.com",
+//     username: "bob1",
+//     gender: "male",
+//     login: function(){
+//         return this.username + " Has logged in!";
+//     },
+//     logout: function(){
+//         return this.username + " Has logged out!";
+//     }
+// }
+// console.log(Bob.login());
+// console.log(Bob.logout());
 
-let Alice = {
-    email: "alice@gmail.com",
-    username: "alice1",
-    gender: "female",
-    login: function(){
-        return this.username + " Has logged in!";
-    },
-    logout: function(){
-        return this.username + " Has logged out"
-    }    
-    }
-console.log(Alice.login());
-console.log(Alice.logout());
+// let Alice = {
+//     email: "alice@gmail.com",
+//     username: "alice1",
+//     gender: "female",
+//     login: function(){
+//         return this.username + " Has logged in!";
+//     },
+//     logout: function(){
+//         return this.username + " Has logged out"
+//     }    
+//     }
+// console.log(Alice.login());
+// console.log(Alice.logout());
 
 // //no.1
 // let phoneOne = {
@@ -276,8 +276,34 @@ console.log(phoneTwo.playMusic());
 //no.4 Call the methods of each user object
 
 
+function addUser(userName, email, gender){
+    return{
+        userName: userName,
+        email: email,
+         gender: gender,
+    
+        login: function(){
+            return this.userName + "  is Loggedin!"
+        },
+        logout: function(){
+            return this.userName + " is Logged out!"   
+    }
+}
+}
+let userOne = addUser("Ben1", "ben@gmail.com", "male");
+let userTwo = addUser("Isaac1", "isaac@gmail.com", "male");
+let userThree = addUser("Joy1", "joy@gmail.com", "female");
 
+console.log("userOne:", userOne);
+console.log(userOne.login());
+console.log(userOne.logout());
 
+console.log("userTwo:", userTwo);
+console.log(userTwo.login());
+console.log(userTwo.logout());
 
+console.log("userThree:", userThree);
+console.log(userThree.login());
+console.log(userThree.logout());
 
 
