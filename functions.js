@@ -263,6 +263,13 @@ console.log(phoneOne.takePicture());
 console.log(phoneOne.playMusic());
 console.log(phoneOne.ring());
 
+console.log("phoneTwo:", phoneTwo);
+console.log(phoneTwo.takePicture());
+console.log(phoneTwo.ring());
+console.log(phoneTwo.playMusic());
+
+
+
 //no.1 Create a function to create a user object 
 //no.2 Create three users using the function
 //no.3 Logout the properties of each user object
