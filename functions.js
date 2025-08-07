@@ -205,7 +205,7 @@ const userthree = {
 //     color: "black",
 //     size: "large",
 //     type: "s24",
-//     takePicture: function(){
+//     takePicture:()=>{
 //         return this.type + "  1 + 2 + 3 + snap"
 //     },
 //     playMusic: function(){
@@ -215,9 +215,9 @@ const userthree = {
 //         return `${this.type} ringing`
 //     }
 // }
-// console.log(sumsang.takePicture());
-// console.log(sumsang.playMusic());
-// console.log(sumsang.ring());
+// console.log(phoneOne.playMusic());
+// console.log(phoneOne.takePicture());
+// console.log(phoneOne.ring());
 
 // let phoneTwo = {
 //      color: "white",
@@ -255,6 +255,8 @@ function createPhone(color, size, type){
         }
     }
 }
+
+
 let phoneOne = createPhone("black", "large", "s24");
 let phoneTwo = createPhone("white", "large", "16promax");
 
@@ -276,34 +278,59 @@ console.log(phoneTwo.playMusic());
 //no.4 Call the methods of each user object
 
 
-function addUser(userName, email, gender){
-    return{
-        userName: userName,
-        email: email,
-         gender: gender,
+// function addUser(userName, email, gender){
+//     return{
+//         userName: userName,
+//         email: email,
+//          gender: gender,
     
-        login: function(){
-            return this.userName + "  is Loggedin!"
-        },
-        logout: function(){
-            return this.userName + " is Logged out!"   
-    }
-}
-}
-let userOne = addUser("Ben1", "ben@gmail.com", "male");
-let userTwo = addUser("Isaac1", "isaac@gmail.com", "male");
-let userThree = addUser("Joy1", "joy@gmail.com", "female");
+//         login: function(){
+//             return this.userName + "  is Loggedin!"
+//         },
+//         logout: function(){
+//             return this.userName + " is Logged out!"   
+//     }
+// }
+// }
+// let userOne = addUser("Ben1", "ben@gmail.com", "male");
+// let userTwo = addUser("Isaac1", "isaac@gmail.com", "male");
+// let userThree = addUser("Joy1", "joy@gmail.com", "female");
 
-console.log("userOne:", userOne);
-console.log(userOne.login());
-console.log(userOne.logout());
-
-console.log("userTwo:", userTwo);
-console.log(userTwo.login());
-console.log(userTwo.logout());
-
-console.log("userThree:", userThree);
-console.log(userThree.login());
-console.log(userThree.logout());
+// console.log("userOne:", userOne);
+// console.log(userOne.login());
+// console.log(userOne.logout());
+// console.log(userOne.userName, email, gender);
 
 
+// console.log("userTwo:", userTwo);
+// console.log(userTwo.login());
+// console.log(userTwo.logout());
+//console.log(UserTwo.userName, email, gender);
+
+// console.log("userThree:", userThree);
+// console.log(userThree.login());
+// console.log(userThree.logout());
+//console.log(userThree.userName, email, gender);
+
+//no.1 Findout the differences between function declarations and function expressions.
+//no.2 What are the limmitations of using function expressions over function declarations.
+//no.3 Advantage of using function expressions over function declarations.
+
+//Answers
+// Function Declaration: 
+// Defined with the function keyword followed by a name. 
+// They are hoisted, meaning the entire function is loaded into memory during the compilation phase, 
+// so you can call the function before its definition in the code.
+
+
+// Function Expression:
+//  A function assigned to a variable, which can be anonymous (without a name). 
+// These are not hoisted; the function is created only when the execution reaches that line, 
+// so you cannot call it before the definition.
+
+let add = function(a,b) {
+    a: 2
+    b: 3
+    return a + b;
+};
+console.log(add());
